@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> HTML Homework </title>
+    </head>
+    <body>
+
+        <div>
+            <h1>Registration form</h1>  
+            <form>
+                <label for="firstName">First name </label><br />
+                <input type="text" name="input_firstName" id="firstName" placeholder="First name" required><br />
+
+                <label for="lastName">Last name </label><br />
+                <input type="text" name="input_lastName" id="lastName" placeholder="Last name" required><br />
+
+                <label for="email">E-mail </label><br />
+                <input type="email" name="input_email" id="email" placeholder="Contact e-mail" required><br />
+
+                <label for="phone">Phone number </label><br />
+                <input type="tel" name="input_tel" id="phone" placeholder="Contact number" required><br />
+
+                <label for="zipCode">Zip code </label><br />
+                <input type="number" name="input_zipCode" id="zipCode" placeholder="Zip code" required><br />
+                
+                <label for="date">Select your birth date</label><br />
+                <input type="date" name="input_date" id="date" min="1910-01-01" required>
+
+                <p>Select your gender </p>
+                <input type="radio" name="input_gender" id="male" value="Male">
+                <label for="male">Male</label><br />
+
+                <input type="radio" name="input_gender" id="female" value="Female">
+                <label for="female">Female</label><br />    
+
+                <input type="radio" name="input_gender" id="other" value="Other" required>
+                <label for="other">Other</label><br /> 
+
+                <p for="picture">Select profile picture (optional)</p>
+                <input type="file" id="picture" name="input_file">
+
+                <p>Pick your favorite color (optional)</p>
+                <label for="color">Color</label>
+                <input type="color" id="color" name="input_color">
+
+                <p>Have you ever been on our website before? (optional)</p>
+                <label for="yes">Yes</label>
+                <input type="checkbox" id="yes" name="input_yes"><br /> 
+                <label for="iDonRemember">I don't remember</label>
+                <input type="checkbox" id="iDonRemember" name="input_iDonRemember"><br /> 
+
+                <p>Click sound volume (optional)</p>
+                <label for="sound">Volume</label>
+                <input type="range" min="0" max="100" value="0" id="sound" name="input_sound"><br /> 
+
+                <div style="margin-top: 30px;">
+                    <!--
+                    <input type="cancel" name="Cancel" value="Cancel">
+                    -->                   
+                    <input type="reset" name="Reset" value="Reset">
+                    <input type="submit" name="Submit" value="Submit">
+                </div>
+            </form>
+        </div>   
+
+    </body>
+</html>
